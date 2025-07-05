@@ -1,0 +1,303 @@
+2025-07-05 16:19:32,262 [INFO] - Starting Bookmark Clicker.
+2025-07-05 16:19:32,263 [INFO] - Press <cmd>+<shift>+q to quit at any time.
+2025-07-05 16:19:32,263 [INFO] - Attempting to detect a supported browser window...
+2025-07-05 16:19:32,263 [INFO] - Please make sure the browser is the frontmost window.
+2025-07-05 16:19:32,432 [ERROR] - AppleScript Error: 
+2025-07-05 16:19:32,432 [INFO] - Browser not detected. Retrying in 2 seconds...
+2025-07-05 16:19:34,592 [ERROR] - AppleScript Error: 
+2025-07-05 16:19:34,592 [INFO] - Browser not detected. Retrying in 2 seconds...
+2025-07-05 16:19:36,796 [INFO] - Detected browser region: (0, 25, 1920, 1055)
+2025-07-05 16:19:36,796 [INFO] - Browser detected successfully!
+2025-07-05 16:19:36,796 [INFO] - Automation loop started. Press hotkey to begin.
+2025-07-05 16:19:36,797 [INFO] - Hotkey listener started. Press <cmd>+<shift>+s to toggle pause/resume.
+2025-07-05 16:19:40,894 [INFO] - --- Resumed ---
+2025-07-05 16:19:41,082 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:19:41,236 [INFO] - Clicked bookmark #1 at (1156, 643)
+2025-07-05 16:19:42,887 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:19:42,887 [INFO] - Blacklisting coordinate (1156, 643) for 2 rounds
+2025-07-05 16:19:44,049 [INFO] - Found 2 unique bookmarks.
+2025-07-05 16:19:44,168 [INFO] - Clicked bookmark #2 at (703, 733)
+2025-07-05 16:19:44,673 [INFO] - Skipping blacklisted coordinate (1156, 643)
+2025-07-05 16:19:45,835 [INFO] - Found 2 unique bookmarks.
+2025-07-05 16:19:45,836 [INFO] - Blacklisting coordinate (703, 733) for 2 rounds
+2025-07-05 16:19:45,954 [INFO] - Clicked bookmark #3 at (1156, 643)
+2025-07-05 16:19:47,619 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:19:47,619 [INFO] - Blacklisting coordinate (1156, 643) for 2 rounds
+2025-07-05 16:19:48,779 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:19:48,779 [INFO] - Skipping blacklisted coordinate (1156, 643)
+2025-07-05 16:19:49,946 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:19:50,062 [INFO] - Clicked bookmark #4 at (1156, 643)
+2025-07-05 16:19:51,720 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:19:51,836 [INFO] - Clicked bookmark #5 at (1156, 420)
+2025-07-05 16:19:53,505 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:19:53,623 [INFO] - Clicked bookmark #6 at (1156, 963)
+2025-07-05 16:19:55,288 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:19:55,406 [INFO] - Clicked bookmark #7 at (1156, 726)
+2025-07-05 16:19:57,078 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:19:57,190 [INFO] - Clicked bookmark #8 at (1156, 913)
+2025-07-05 16:19:58,855 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:19:58,970 [INFO] - Clicked bookmark #9 at (1156, 788)
+2025-07-05 16:20:00,634 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:20:00,751 [INFO] - Clicked bookmark #10 at (1156, 670)
+2025-07-05 16:20:02,426 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:20:02,427 [INFO] - Blacklisting coordinate (1156, 670) for 2 rounds
+2025-07-05 16:20:03,595 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:20:03,596 [INFO] - Skipping blacklisted coordinate (1156, 670)
+2025-07-05 16:20:04,794 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:20:04,909 [INFO] - Clicked bookmark #11 at (1156, 670)
+2025-07-05 16:20:06,587 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:20:06,587 [INFO] - Blacklisting coordinate (1156, 670) for 2 rounds
+2025-07-05 16:20:07,755 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:20:07,755 [INFO] - Skipping blacklisted coordinate (1156, 670)
+2025-07-05 16:20:08,921 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:20:09,037 [INFO] - Clicked bookmark #12 at (1156, 670)
+2025-07-05 16:20:10,720 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:20:10,721 [INFO] - Blacklisting coordinate (1156, 670) for 2 rounds
+2025-07-05 16:20:11,883 [INFO] - Found 2 unique bookmarks.
+2025-07-05 16:20:11,996 [INFO] - Clicked bookmark #13 at (1016, 936)
+2025-07-05 16:20:12,502 [INFO] - Skipping blacklisted coordinate (1156, 670)
+2025-07-05 16:20:13,666 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:20:13,784 [INFO] - Clicked bookmark #14 at (1156, 670)
+2025-07-05 16:20:15,481 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:20:15,602 [INFO] - Clicked bookmark #15 at (1156, 623)
+2025-07-05 16:20:17,285 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:20:17,285 [INFO] - Blacklisting coordinate (1156, 623) for 2 rounds
+2025-07-05 16:20:18,461 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:20:18,461 [INFO] - Skipping blacklisted coordinate (1156, 623)
+2025-07-05 16:20:19,623 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:20:19,737 [INFO] - Clicked bookmark #16 at (1156, 623)
+2025-07-05 16:20:21,405 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:20:21,405 [INFO] - Blacklisting coordinate (1156, 623) for 2 rounds
+2025-07-05 16:20:22,564 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:20:22,683 [INFO] - Clicked bookmark #17 at (1156, 550)
+2025-07-05 16:20:24,358 [INFO] - No bookmarks found in this scan.
+2025-07-05 16:20:25,517 [INFO] - No bookmarks found in this scan.
+2025-07-05 16:20:26,692 [INFO] - No bookmarks found in this scan.
+2025-07-05 16:20:27,873 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:20:27,991 [INFO] - Clicked bookmark #18 at (1156, 550)
+2025-07-05 16:20:29,681 [INFO] - No bookmarks found in this scan.
+2025-07-05 16:20:30,851 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:20:30,970 [INFO] - Clicked bookmark #19 at (1156, 585)
+2025-07-05 16:20:32,645 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:20:32,645 [INFO] - Blacklisting coordinate (1156, 585) for 2 rounds
+2025-07-05 16:20:33,829 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:20:33,829 [INFO] - Skipping blacklisted coordinate (1156, 585)
+2025-07-05 16:20:34,999 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:20:35,118 [INFO] - Clicked bookmark #20 at (1156, 585)
+2025-07-05 16:20:36,798 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:20:36,798 [INFO] - Blacklisting coordinate (1156, 585) for 2 rounds
+2025-07-05 16:20:38,003 [INFO] - No bookmarks found in this scan.
+2025-07-05 16:20:39,175 [INFO] - No bookmarks found in this scan.
+2025-07-05 16:20:40,328 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:20:40,445 [INFO] - Clicked bookmark #21 at (1156, 585)
+2025-07-05 16:20:42,131 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:20:42,131 [INFO] - Blacklisting coordinate (1156, 585) for 2 rounds
+2025-07-05 16:20:43,305 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:20:43,305 [INFO] - Skipping blacklisted coordinate (1156, 585)
+2025-07-05 16:20:44,487 [INFO] - No bookmarks found in this scan.
+2025-07-05 16:20:45,655 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:20:45,774 [INFO] - Clicked bookmark #22 at (1156, 585)
+2025-07-05 16:20:47,456 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:20:47,467 [INFO] - --- Paused ---
+2025-07-05 16:20:47,574 [INFO] - Clicked bookmark #23 at (1156, 706)
+2025-07-05 16:20:50,755 [INFO] - --- Resumed ---
+2025-07-05 16:20:51,013 [INFO] - No bookmarks found in this scan.
+2025-07-05 16:20:52,173 [INFO] - No bookmarks found in this scan.
+2025-07-05 16:20:53,339 [INFO] - No bookmarks found in this scan.
+2025-07-05 16:29:09,196 [INFO] - Starting Bookmark Clicker.
+2025-07-05 16:29:09,196 [INFO] - Press <cmd>+<shift>+q to quit at any time.
+2025-07-05 16:29:09,198 [INFO] - Attempting to detect a supported browser window...
+2025-07-05 16:29:09,198 [INFO] - Please make sure the browser is the frontmost window.
+2025-07-05 16:29:09,469 [ERROR] - AppleScript Error: 
+2025-07-05 16:29:09,469 [INFO] - Browser not detected. Retrying in 2 seconds...
+2025-07-05 16:29:11,665 [INFO] - Detected browser region: (0, 25, 1920, 1055)
+2025-07-05 16:29:11,665 [INFO] - Browser detected successfully!
+2025-07-05 16:29:11,665 [INFO] - Automation loop started. Press hotkey to begin.
+2025-07-05 16:29:11,666 [INFO] - Hotkey listener started. Press <cmd>+<shift>+s to toggle pause/resume.
+2025-07-05 16:29:14,707 [INFO] - --- Resumed ---
+2025-07-05 16:29:14,901 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:29:15,059 [INFO] - Clicked bookmark #1 at (1156, 650)
+2025-07-05 16:29:16,724 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:29:16,844 [INFO] - Clicked bookmark #2 at (1156, 508)
+2025-07-05 16:29:17,982 [INFO] - --- Paused ---
+2025-07-05 16:30:41,404 [INFO] - Keyboard interrupt received. Shutting down.
+2025-07-05 16:30:41,404 [INFO] - Application has been shut down.
+2025-07-05 16:30:45,695 [INFO] - Starting Bookmark Clicker.
+2025-07-05 16:30:45,696 [INFO] - Press <cmd>+<shift>+q to quit at any time.
+2025-07-05 16:30:45,696 [INFO] - Attempting to detect a supported browser window...
+2025-07-05 16:30:45,696 [INFO] - Please make sure the browser is the frontmost window.
+2025-07-05 16:30:45,845 [ERROR] - AppleScript Error: 
+2025-07-05 16:30:45,845 [INFO] - Browser not detected. Retrying in 2 seconds...
+2025-07-05 16:30:48,038 [INFO] - Detected browser region: (0, 25, 1920, 1055)
+2025-07-05 16:30:48,039 [INFO] - Browser detected successfully!
+2025-07-05 16:30:48,039 [INFO] - Automation loop started. Press hotkey to begin.
+2025-07-05 16:30:48,040 [INFO] - Hotkey listener started. Press <cmd>+<shift>+s to toggle pause/resume.
+2025-07-05 16:30:49,221 [INFO] - --- Resumed ---
+2025-07-05 16:30:49,435 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:30:49,589 [INFO] - Clicked bookmark #1 at (1156, 508)
+2025-07-05 16:30:51,241 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:30:51,241 [INFO] - Blacklisting coordinate (1156, 508) for 2 rounds
+2025-07-05 16:30:52,404 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:30:52,405 [INFO] - Skipping blacklisted coordinate (1156, 508)
+2025-07-05 16:30:53,562 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:30:53,680 [INFO] - Clicked bookmark #2 at (1156, 508)
+2025-07-05 16:30:54,984 [INFO] - --- Paused ---
+2025-07-05 16:31:00,120 [INFO] - --- Resumed ---
+2025-07-05 16:31:00,284 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:31:00,398 [INFO] - Clicked bookmark #3 at (1156, 506)
+2025-07-05 16:31:00,884 [INFO] - --- Paused ---
+2025-07-05 16:32:26,438 [INFO] - --- Resumed ---
+2025-07-05 16:32:26,668 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:32:26,783 [INFO] - Clicked bookmark #4 at (1156, 641)
+2025-07-05 16:32:27,063 [INFO] - --- Paused ---
+2025-07-05 16:32:33,323 [INFO] - --- Resumed ---
+2025-07-05 16:32:33,498 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:32:33,617 [INFO] - Clicked bookmark #5 at (1156, 815)
+2025-07-05 16:32:34,060 [INFO] - --- Paused ---
+2025-07-05 16:33:53,549 [INFO] - --- Resumed ---
+2025-07-05 16:33:53,786 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:33:53,786 [INFO] - Blacklisting coordinate (1156, 815) for 2 rounds
+2025-07-05 16:33:54,945 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:33:54,945 [INFO] - Skipping blacklisted coordinate (1156, 815)
+2025-07-05 16:33:56,100 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:33:56,218 [INFO] - Clicked bookmark #6 at (1156, 815)
+2025-07-05 16:33:56,248 [INFO] - --- Paused ---
+2025-07-05 16:34:19,936 [INFO] - --- Resumed ---
+2025-07-05 16:34:20,184 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:34:20,184 [INFO] - Blacklisting coordinate (1156, 815) for 2 rounds
+2025-07-05 16:34:21,346 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:34:21,346 [INFO] - Skipping blacklisted coordinate (1156, 815)
+2025-07-05 16:34:22,439 [INFO] - --- Paused ---
+2025-07-05 16:34:22,498 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:34:29,887 [INFO] - --- Resumed ---
+2025-07-05 16:34:30,127 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:34:30,246 [INFO] - Clicked bookmark #7 at (1156, 815)
+2025-07-05 16:34:31,907 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:34:31,907 [INFO] - Blacklisting coordinate (1156, 815) for 2 rounds
+2025-07-05 16:34:33,063 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:34:33,064 [INFO] - Skipping blacklisted coordinate (1156, 815)
+2025-07-05 16:34:34,236 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:34:34,352 [INFO] - Clicked bookmark #8 at (1156, 815)
+2025-07-05 16:34:35,374 [INFO] - --- Paused ---
+2025-07-05 16:40:21,816 [INFO] - Starting Bookmark Clicker.
+2025-07-05 16:40:21,816 [INFO] - Press <cmd>+<shift>+q to quit at any time.
+2025-07-05 16:40:21,817 [INFO] - Attempting to detect a supported browser window...
+2025-07-05 16:40:21,817 [INFO] - Please make sure the browser is the frontmost window.
+2025-07-05 16:40:22,090 [ERROR] - AppleScript Error: 
+2025-07-05 16:40:22,090 [INFO] - Browser not detected. Retrying in 2 seconds...
+2025-07-05 16:40:24,313 [INFO] - Detected browser region: (0, 25, 1920, 1055)
+2025-07-05 16:40:24,314 [INFO] - Browser detected successfully!
+2025-07-05 16:40:24,314 [INFO] - Automation loop started. Press hotkey to begin.
+2025-07-05 16:40:24,315 [INFO] - Hotkey listener started. Press <cmd>+<shift>+s to toggle pause/resume.
+2025-07-05 16:40:27,896 [INFO] - --- Resumed ---
+2025-07-05 16:40:28,081 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:40:28,081 [ERROR] - An error occurred in the automation loop: cannot access local variable 'original_x' where it is not associated with a value
+2025-07-05 16:40:29,241 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:40:29,241 [ERROR] - An error occurred in the automation loop: cannot access local variable 'original_x' where it is not associated with a value
+2025-07-05 16:40:30,400 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:40:30,400 [ERROR] - An error occurred in the automation loop: cannot access local variable 'original_x' where it is not associated with a value
+2025-07-05 16:40:31,549 [INFO] - No bookmarks found in this scan.
+2025-07-05 16:40:32,688 [INFO] - No bookmarks found in this scan.
+2025-07-05 16:40:33,852 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:40:33,852 [ERROR] - An error occurred in the automation loop: cannot access local variable 'original_x' where it is not associated with a value
+2025-07-05 16:40:35,012 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:40:35,013 [ERROR] - An error occurred in the automation loop: cannot access local variable 'original_x' where it is not associated with a value
+2025-07-05 16:40:36,181 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:40:36,181 [ERROR] - An error occurred in the automation loop: cannot access local variable 'original_x' where it is not associated with a value
+2025-07-05 16:40:36,935 [INFO] - --- Paused ---
+2025-07-05 16:40:37,959 [INFO] - --- Resumed ---
+2025-07-05 16:40:38,167 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:40:38,167 [ERROR] - An error occurred in the automation loop: cannot access local variable 'original_x' where it is not associated with a value
+2025-07-05 16:40:39,348 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:40:39,348 [ERROR] - An error occurred in the automation loop: cannot access local variable 'original_x' where it is not associated with a value
+2025-07-05 16:40:40,510 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:40:40,510 [ERROR] - An error occurred in the automation loop: cannot access local variable 'original_x' where it is not associated with a value
+2025-07-05 16:40:41,676 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:40:41,676 [ERROR] - An error occurred in the automation loop: cannot access local variable 'original_x' where it is not associated with a value
+2025-07-05 16:40:42,852 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:40:42,852 [ERROR] - An error occurred in the automation loop: cannot access local variable 'original_x' where it is not associated with a value
+2025-07-05 16:40:44,023 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:40:44,023 [ERROR] - An error occurred in the automation loop: cannot access local variable 'original_x' where it is not associated with a value
+2025-07-05 16:40:45,204 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:40:45,204 [ERROR] - An error occurred in the automation loop: cannot access local variable 'original_x' where it is not associated with a value
+2025-07-05 16:40:46,383 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:40:46,383 [ERROR] - An error occurred in the automation loop: cannot access local variable 'original_x' where it is not associated with a value
+2025-07-05 16:40:47,555 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:40:47,555 [ERROR] - An error occurred in the automation loop: cannot access local variable 'original_x' where it is not associated with a value
+2025-07-05 16:40:47,802 [INFO] - --- Paused ---
+2025-07-05 16:47:19,035 [INFO] - Keyboard interrupt received. Shutting down.
+2025-07-05 16:47:19,036 [INFO] - Application has been shut down.
+2025-07-05 16:47:29,166 [INFO] - Starting Bookmark Clicker.
+2025-07-05 16:47:29,167 [INFO] - Press <cmd>+<shift>+q to quit at any time.
+2025-07-05 16:47:29,168 [INFO] - Attempting to detect a supported browser window...
+2025-07-05 16:47:29,168 [INFO] - Please make sure the browser is the frontmost window.
+2025-07-05 16:47:29,411 [ERROR] - AppleScript Error: 
+2025-07-05 16:47:29,411 [INFO] - Browser not detected. Retrying in 2 seconds...
+2025-07-05 16:47:31,638 [INFO] - Detected browser region: (0, 25, 1920, 1055)
+2025-07-05 16:47:31,639 [INFO] - Browser detected successfully!
+2025-07-05 16:47:31,639 [INFO] - Automation loop started. Press hotkey to begin.
+2025-07-05 16:47:31,640 [INFO] - Hotkey listener started. Press <cmd>+<shift>+s to toggle pause/resume.
+2025-07-05 16:47:31,878 [INFO] - --- Resumed ---
+2025-07-05 16:47:32,119 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:47:32,119 [ERROR] - An error occurred in the automation loop: cannot access local variable 'original_x' where it is not associated with a value
+2025-07-05 16:47:33,286 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:47:33,286 [ERROR] - An error occurred in the automation loop: cannot access local variable 'original_x' where it is not associated with a value
+2025-07-05 16:47:34,453 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:47:34,454 [ERROR] - An error occurred in the automation loop: cannot access local variable 'original_x' where it is not associated with a value
+2025-07-05 16:47:35,618 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:47:35,618 [ERROR] - An error occurred in the automation loop: cannot access local variable 'original_x' where it is not associated with a value
+2025-07-05 16:47:36,748 [INFO] - --- Paused ---
+2025-07-05 16:47:36,784 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:47:42,601 [ERROR] - Unhandled exception in listener callback
+Traceback (most recent call last):
+  File "/Users/chiusean/Downloads/bookmark-clicker/venv/lib/python3.13/site-packages/pynput/_util/__init__.py", line 230, in inner
+    return f(self, *args, **kwargs)
+  File "/Users/chiusean/Downloads/bookmark-clicker/venv/lib/python3.13/site-packages/pynput/_util/darwin.py", line 290, in _handler
+    self._handle_message(proxy, event_type, event, refcon, is_injected)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chiusean/Downloads/bookmark-clicker/venv/lib/python3.13/site-packages/pynput/keyboard/_darwin.py", line 313, in _handle_message
+    self.on_press(self._SPECIAL_KEYS[key])
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chiusean/Downloads/bookmark-clicker/venv/lib/python3.13/site-packages/pynput/_util/__init__.py", line 146, in inner
+    if f(*args) is False:
+       ~^^^^^^^
+TypeError: GlobalHotKeys._on_press() missing 1 required positional argument: 'injected'
+2025-07-05 16:48:16,610 [INFO] - Keyboard interrupt received. Shutting down.
+2025-07-05 16:48:16,611 [INFO] - Application has been shut down.
+2025-07-05 16:48:46,530 [INFO] - Starting Bookmark Clicker.
+2025-07-05 16:48:46,531 [INFO] - Press <cmd>+<shift>+q to quit at any time.
+2025-07-05 16:48:46,532 [INFO] - Attempting to detect a supported browser window...
+2025-07-05 16:48:46,532 [INFO] - Please make sure the browser is the frontmost window.
+2025-07-05 16:48:46,685 [ERROR] - AppleScript Error: 
+2025-07-05 16:48:46,685 [INFO] - Browser not detected. Retrying in 2 seconds...
+2025-07-05 16:48:48,880 [INFO] - Detected browser region: (0, 25, 1920, 1055)
+2025-07-05 16:48:48,881 [INFO] - Browser detected successfully!
+2025-07-05 16:48:48,881 [INFO] - Automation loop started. Press hotkey to begin.
+2025-07-05 16:48:48,882 [INFO] - Hotkey listener started. Press <cmd>+<shift>+s to toggle pause/resume.
+2025-07-05 16:48:50,790 [INFO] - --- Resumed ---
+2025-07-05 16:48:51,010 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:48:51,010 [ERROR] - An error occurred in the automation loop: cannot access local variable 'original_x' where it is not associated with a value
+2025-07-05 16:48:52,178 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:48:52,178 [ERROR] - An error occurred in the automation loop: cannot access local variable 'original_x' where it is not associated with a value
+2025-07-05 16:48:53,347 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:48:53,347 [ERROR] - An error occurred in the automation loop: cannot access local variable 'original_x' where it is not associated with a value
+2025-07-05 16:48:54,527 [INFO] - No bookmarks found in this scan.
+2025-07-05 16:48:55,677 [INFO] - Found 1 unique bookmarks.
+2025-07-05 16:48:55,677 [ERROR] - An error occurred in the automation loop: cannot access local variable 'original_x' where it is not associated with a value
+2025-07-05 16:48:56,317 [INFO] - --- Paused ---
+2025-07-05 16:50:33,002 [ERROR] - Unhandled exception in listener callback
+Traceback (most recent call last):
+  File "/Users/chiusean/Downloads/bookmark-clicker/venv/lib/python3.13/site-packages/pynput/_util/__init__.py", line 230, in inner
+    return f(self, *args, **kwargs)
+  File "/Users/chiusean/Downloads/bookmark-clicker/venv/lib/python3.13/site-packages/pynput/_util/darwin.py", line 290, in _handler
+    self._handle_message(proxy, event_type, event, refcon, is_injected)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chiusean/Downloads/bookmark-clicker/venv/lib/python3.13/site-packages/pynput/keyboard/_darwin.py", line 313, in _handle_message
+    self.on_press(self._SPECIAL_KEYS[key])
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chiusean/Downloads/bookmark-clicker/venv/lib/python3.13/site-packages/pynput/_util/__init__.py", line 146, in inner
+    if f(*args) is False:
+       ~^^^^^^^
+TypeError: GlobalHotKeys._on_press() missing 1 required positional argument: 'injected'
+2025-07-05 16:50:50,321 [INFO] - Keyboard interrupt received. Shutting down.
+2025-07-05 16:50:50,321 [INFO] - Application has been shut down.
