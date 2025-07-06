@@ -1,0 +1,13 @@
+{
+  "image_path": "/Users/chiusean/Downloads/bookmark-clicker/images/bookmark.png",
+  "confidence": 0.90,
+  "click_delay": 0.5,
+  "scan_delay": 1.0,
+  "watchdog_limit": 100,
+  "downscale_factor": 0.5,
+  "use_grayscale": true,
+  "blacklist_duration": 5,
+  "toolbar_height": 80,
+  "hotkey": "<cmd>+<shift>+s",
+  "exit_hotkey": "<cmd>+<shift>+q"
+}

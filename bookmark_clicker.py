@@ -33,14 +33,22 @@ from pynput import keyboard
 from PIL import Image
 
 # --- CONFIGURATION ---
+from src.config import (
+    IMAGE_PATH, CONFIDENCE, CLICK_DELAY, SCAN_DELAY,
+    WATCHDOG_LIMIT, DOWNSCALE_FACTOR, USE_GRAYSCALE,
+    BLACKLIST_DURATION, TOOLBAR_HEIGHT, TOGGLE_HOTKEY
+)
+
 CONFIG = {
-    "image_path": "/Users/chiusean/Downloads/bookmark-clicker/images/bookmark.png",
-    "confidence": 0.90,  # Match confidence threshold
-    "click_delay": 0.5,  # Delay in seconds between each click
-    "scan_delay": 1.0,   # Delay in seconds between each full scan of the region
-    "watchdog_limit": 100, # Max number of clicks before auto-stopping
-    "downscale_factor": 0.3, # 30% downscaling
-    "hotkey": "<cmd>+<shift>+s",
+    "image_path": IMAGE_PATH,
+    "confidence": CONFIDENCE,
+    "click_delay": CLICK_DELAY,
+    "scan_delay": SCAN_DELAY,
+    "watchdog_limit": WATCHDOG_LIMIT,
+    "downscale_factor": DOWNSCALE_FACTOR,
+    "use_grayscale": USE_GRAYSCALE,
+    "blacklist_duration": BLACKLIST_DURATION,
+    "hotkey": TOGGLE_HOTKEY
 }
 
 # --- GLOBAL STATE ---
@@ -63,7 +71,7 @@ logging.basicConfig(
 
 
 def get_browser_region() -> Optional[Tuple[int, int, int, int]]:
-    """Gets the active browser window's bounds using AppleScript."""
+    """Gets the active browser window's toolbar region using AppleScript."""
     applescript = '''
     tell application "System Events"
         set frontApp to name of first application process whose frontmost is true
@@ -91,7 +99,8 @@ def get_browser_region() -> Optional[Tuple[int, int, int, int]]:
         bounds_str = stdout.strip()
         x, y, x2, y2 = [int(v) for v in bounds_str.split(', ')]
         logging.info(f"Detected browser region: ({x}, {y}, {x2-x}, {y2-y})")
-        return (x, y, x2 - x, y2 - y)
+        # Only return the toolbar region
+        return (x, y, x2 - x, TOOLBAR_HEIGHT)
     except Exception as e:
         logging.error(f"Failed to execute AppleScript: {e}")
         return None
@@ -129,59 +138,65 @@ def automation_loop():
     """The main loop for screenshotting, matching, and clicking."""
     logging.info("Automation loop started. Press hotkey to begin.")
 
-    try:
-        template = cv2.imread(CONFIG["image_path"], cv2.IMREAD_GRAYSCALE)
-        if template is None:
-            logging.error(f"Failed to load template image at {CONFIG['image_path']}")
-            STATE["running"] = False
-            return
-        
-        h, w = template.shape
-        scaled_h = int(h * CONFIG["downscale_factor"])
-        scaled_w = int(w * CONFIG["downscale_factor"])
-        scaled_template = cv2.resize(template, (scaled_w, scaled_h), interpolation=cv2.INTER_AREA)
-
-    except Exception as e:
-        logging.error(f"Error processing template image: {e}")
-        STATE["running"] = False
-        return
-
-    # --- Blacklist and history for coordinates ---
+    # Initialize blacklist and history for coordinates
     blacklist = {}  # (x, y) -> rounds left
     last_clicked = set()
 
+    try:
+        # Load and process template image
+        template = cv2.imread(CONFIG["image_path"], cv2.IMREAD_GRAYSCALE)
+        if template is None:
+            logging.error(f"Failed to load template image from {CONFIG['image_path']}")
+            STATE["running"] = False
+            return
+    except Exception as e:
+        logging.error(f"Failed to load template: {e}")
+        STATE["running"] = False
+        return
+
+    h, w = template.shape
     while STATE["running"]:
         if STATE["paused"]:
-            time.sleep(0.1)
-            continue
-
-        if STATE["region"] is None:
-            logging.warning("Region not set. Skipping scan.")
-            time.sleep(CONFIG["scan_delay"])
+            time.sleep(0.5)
             continue
 
         try:
-            # 1. Capture & Downscale
-            screenshot = pyautogui.screenshot(region=STATE["region"])
-            screenshot_cv = cv2.cvtColor(np.array(screenshot), cv2.COLOR_RGB2GRAY)
-            
-            scaled_screenshot = cv2.resize(
-                screenshot_cv, 
-                (0, 0), 
-                fx=CONFIG["downscale_factor"], 
-                fy=CONFIG["downscale_factor"], 
-                interpolation=cv2.INTER_AREA
-            )
+            # Refresh browser region periodically
+            new_region = get_browser_region()
+            if new_region:
+                STATE['region'] = new_region
+            else:
+                logging.warning('Browser region lost. Falling back to full screen.')
+                STATE['region'] = (0, 0, *pyautogui.size())
 
-            # 2. Fast Matching
-            result = cv2.matchTemplate(scaled_screenshot, scaled_template, cv2.TM_CCOEFF_NORMED)
-            locations = np.where(result >= CONFIG["confidence"])
+            # Take a screenshot of the browser region
+            try:
+                screenshot = pyautogui.screenshot(region=STATE["region"])
+            except pyautogui.FailSafeException:
+                logging.error('PyAutoGUI fail-safe triggered. Stopping.')
+                STATE['running'] = False
+                continue
             
-            rects = []
-            for pt in zip(*locations[::-1]): # Switch x and y
-                rects.append((pt[0], pt[1], scaled_w, scaled_h))
+            # Convert screenshot for template matching
+            screenshot_cv = np.array(screenshot)
+            if CONFIG['use_grayscale']:
+                screenshot_cv = cv2.cvtColor(screenshot_cv, cv2.COLOR_RGB2GRAY)
+                template = cv2.imread(CONFIG["image_path"], cv2.IMREAD_GRAYSCALE)
+            else:
+                template = cv2.imread(CONFIG["image_path"], cv2.IMREAD_COLOR)
 
-            unique_rects = group_rectangles(rects)
+            # Downscale both images for faster processing if needed
+            if CONFIG['downscale_factor'] < 1.0:
+                h, w = screenshot_cv.shape[:2]
+                new_h = int(h * CONFIG["downscale_factor"])
+                new_w = int(w * CONFIG["downscale_factor"])
+                screenshot_cv = cv2.resize(screenshot_cv, (new_w, new_h))
+                template = cv2.resize(template, (0, 0), fx=CONFIG["downscale_factor"], fy=CONFIG["downscale_factor"])
+
+            # Perform multi-scale template matching
+            matches = match_template_at_scales(screenshot_cv, template)
+
+            unique_rects = group_rectangles(matches)
 
             if not unique_rects:
                 logging.info("No bookmarks found in this scan.")
@@ -204,14 +219,15 @@ def automation_loop():
                 if STATE["paused"] or not STATE["running"]:
                     break
                 
-                if int(coord[0]) != 1156:
-                    logging.info(f"Skipping invalid coordinate {coord}")
-                    break
-            
+                # Validate coordinates are within screen bounds
+                screen_width, screen_height = pyautogui.size()
+                if not (0 <= rect[0] <= screen_width and 0 <= rect[1] <= screen_height):
+                    logging.warning(f'Invalid coordinate {rect} outside screen bounds ({screen_width}x{screen_height})')
+                    continue
+
                 # Map back to full resolution
-                original_x = int((rect[0] + rect[2] / 2) / CONFIG["downscale_factor"]) + STATE["region"][0]
-                original_y = int((rect[1] + rect[3] / 2) / CONFIG["downscale_factor"]) + STATE["region"][1]
-                coord = (original_x, original_y)
+                original_x = int((rect[0] + rect[2] / 2)) + STATE["region"][0]
+                original_y = int((rect[1] + rect[3] / 2)) + STATE["region"][1]
 
                 # Blacklist check
                 if coord in blacklist:
@@ -220,8 +236,8 @@ def automation_loop():
 
                 # If this coordinate was clicked last round, blacklist it for 2 rounds
                 if coord in last_clicked:
-                    blacklist[coord] = 2
-                    logging.info(f"Blacklisting coordinate {coord} for 2 rounds")
+                    blacklist[coord] = CONFIG['blacklist_duration']
+                    logging.info(f"Blacklisting coordinate {coord} for {CONFIG['blacklist_duration']} rounds")
                     continue
 
                 pyautogui.click(original_x, original_y)

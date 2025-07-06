@@ -301,3 +301,26 @@ Traceback (most recent call last):
 TypeError: GlobalHotKeys._on_press() missing 1 required positional argument: 'injected'
 2025-07-05 16:50:50,321 [INFO] - Keyboard interrupt received. Shutting down.
 2025-07-05 16:50:50,321 [INFO] - Application has been shut down.
+2025-07-05 17:23:38,449 [INFO] - Starting Bookmark Clicker.
+2025-07-05 17:23:38,449 [INFO] - Press <cmd>+<shift>+q to quit at any time.
+2025-07-05 17:23:38,449 [INFO] - Attempting to detect a supported browser window...
+2025-07-05 17:23:38,450 [INFO] - Please make sure the browser is the frontmost window.
+2025-07-05 17:23:38,729 [ERROR] - AppleScript Error: 
+2025-07-05 17:23:38,729 [INFO] - Browser not detected. Retrying in 2 seconds...
+2025-07-05 17:23:40,966 [INFO] - Detected browser region: (0, 25, 1920, 1055)
+2025-07-05 17:23:40,967 [INFO] - Browser detected successfully!
+2025-07-05 17:23:40,967 [INFO] - Automation loop started. Press hotkey to begin.
+2025-07-05 17:23:40,968 [INFO] - Hotkey listener started. Press <cmd>+<shift>+s to toggle pause/resume.
+2025-07-05 17:23:51,752 [INFO] - --- Resumed ---
+2025-07-05 17:23:52,270 [INFO] - Detected browser region: (0, 25, 1920, 1055)
+2025-07-05 17:23:52,378 [ERROR] - An error occurred in the automation loop: name 'match_template_at_scales' is not defined
+2025-07-05 17:23:53,601 [INFO] - Detected browser region: (0, 25, 1920, 1055)
+2025-07-05 17:23:53,690 [ERROR] - An error occurred in the automation loop: name 'match_template_at_scales' is not defined
+2025-07-05 17:23:54,918 [INFO] - Detected browser region: (0, 25, 1920, 1055)
+2025-07-05 17:23:55,019 [ERROR] - An error occurred in the automation loop: name 'match_template_at_scales' is not defined
+2025-07-05 17:23:56,178 [ERROR] - AppleScript Error: 
+2025-07-05 17:23:56,178 [WARNING] - Browser region lost. Falling back to full screen.
+2025-07-05 17:23:56,315 [ERROR] - An error occurred in the automation loop: name 'match_template_at_scales' is not defined
+2025-07-05 17:23:57,187 [INFO] - --- Paused ---
+2025-07-05 17:24:27,170 [INFO] - Keyboard interrupt received. Shutting down.
+2025-07-05 17:24:27,171 [INFO] - Application has been shut down.
